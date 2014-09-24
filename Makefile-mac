@@ -39,5 +39,5 @@ clean-all:
 	rm -f *.sfd *.log *.pdf *.ttx
 
 dist-font:
-	cd .. && zip hcr-lvt-mac.zip GSUB/HAN*-LVT.ttf
+	cd .. && zip hcr-lvt-mac.zip hcr-lvt/HAN*-LVT.ttf
 
