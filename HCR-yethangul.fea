@@ -1,11 +1,7 @@
 
 
 lookup OldChosong {
-# mac os x seems to recompose jamos to syllable after opentype feature process.
-# so we apply ignore rule, without which mac guys say filenames look ugly. 
-#    ignore sub @newcho' @newjung @newjong ;
     include (lvtl.fea)
-#    ignore sub @newcho' @newjung ;
     include (lvl.fea)
 } OldChosong;
 
