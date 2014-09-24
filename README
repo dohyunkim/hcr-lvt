@@ -22,7 +22,8 @@ Hancom Inc.(http://www.hancom.com) is the copyright holder of HCR fonts
 and HCR LVT variants as well, which can be freely downloaded and
 modified, but cannot be sold for commerical purposes.
 
-Scripts and feature files of this project, however, are in the public domain.
+Scripts and feature files of this project, however, are in the public
+domain.
 
 
 Building
@@ -47,13 +48,13 @@ Building
 2-2. For Mac OS X, run this shell command:
 
      for F in HANBatang HANBatangB HANDotum HANDotumB; \
-     do make -f Makefile-win HCRTTF=$F; \
+     do make -f Makefile-mac HCRTTF=$F; \
      done
 
 2-3. For Windows OS, run this shell command:
 
      for F in HANBatang HANBatangB HANDotum HANDotumB; \
-     do make -f Makefile-mac HCRTTF=$F; \
+     do make -f Makefile-win HCRTTF=$F; \
      done
 
 That's all.
