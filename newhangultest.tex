@@ -1,0 +1,55 @@
+\ifx\directlua\undefined\else\input luaotfload.sty \fi
+\ifx\testfontname\undefined
+    \def\testfontname{HANBatang-LVT}\fi
+%\font\hcrgsub="[\testfontname]:script=hang;color=0000FFAA;-rlig" at 24pt
+\font\hcrgsub="[\testfontname]:script=hang;color=0000FFAA" at 24pt
+\font\hcrsyll="[\testfontname]:color=FF0000AA" at 24pt
+\hcrsyll
+\hsize=20em \parindent0pt \parskip.5em
+\baselineskip=1.2em
+\raggedbottom \raggedright \hfuzz\maxdimen
+\XeTeXuseglyphmetrics=0
+
+%\hcrgsub
+%^^^^1100^^^^1100^^^^1161
+%^^^^1100^^^^1100^^^^1161^^^^11a8
+%\lower.2em\vbox{\hrule\hbox{\vrule ^^^^115f^^^^1161\vrule}\hrule}
+%\lower.2em\vbox{\hrule\hbox{\vrule ^^^^1100^^^^1160\vrule}\hrule}
+
+\hcrgsub GSUB \hcrsyll SYLLABLE
+
+\newcount\l
+\newcount\v
+\newcount\t
+\newcount\cho
+\newcount\chojung
+
+\def\jongsong{%
+    \begingroup
+    \t="11A7 % start from dummy jongsong
+    \loop
+	\hcrsyll \char\numexpr \chojung + \t - "11A7 + "AC00 \relax
+	\kern-0.97em
+	\hcrgsub \char\l \char\v \ifnum\t > "11A7 \char\t \fi
+	\space
+    \ifnum\t < "11C2 \advance\t by 1 \repeat
+    \endgroup
+}
+\def\jungsong{%
+    \begingroup
+    \v="1161
+    \loop
+	\chojung\numexpr (\cho + \v - "1161) * 28 \relax
+	\jongsong
+    \ifnum\v < "1175 \advance\v by 1 \repeat
+    \endgroup
+}
+
+\l="1100
+\loop
+    \cho\numexpr (\l - "1100) * 21 \relax
+    \jungsong
+    \endgraf
+\ifnum\l < "1112 \advance\l by 1 \repeat
+
+\bye

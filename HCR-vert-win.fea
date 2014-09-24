@@ -1,0 +1,107 @@
+feature halt {
+    pos [ uni3001 uni3002
+	  uniFF0C uniFF0E
+	  uniFF07 uniFF09 uniFF1E uniFF3D uniFF5D uniFF60
+    ] <0 0 -485 0> ;
+    pos [
+	    uni30FB 
+	    uniFF1A uniFF1B
+	    uniFF02 uniFF5C
+	    uniFF01 uniFF1F uniFF3E 
+    ] <-242 0 -485 0>;
+    pos [
+	    uniFF08 uniFF1C uniFF3B uniFF40 uniFF5B uniFF5F
+    ] <-485 0 -485 0>;
+#    pos [ uniFF0C uniFF0E ] <-333 0 -485 0> ;
+} halt;
+
+feature vert {
+    sub period by uniFE12 ;
+#    sub period by uniFF0E ;
+    sub comma by uniFE11 ;
+#    sub exclam by uniFE15 ;
+    sub exclam by uniFF01 ;
+#    sub question by uniFE16 ;
+    sub question by uniFF1F ;
+    sub parenleft by uniFE35 ;
+    sub parenright by uniFE36 ;
+    sub colon by uniFE13 ;
+    sub semicolon by uniFE14 ;
+    sub less by uniFE3F ;
+    sub greater by uniFE40 ;
+    sub bracketleft by uniFE39 ;
+    sub bracketright by uniFE3A ;
+    sub braceleft by uniFE37 ;
+    sub braceright by uniFE38 ;
+    sub quoteleft by uniFE41 ;
+    sub quoteright by uniFE42 ;
+    sub quotedblleft by uniFE43 ;
+    sub quotedblright by uniFE44 ;
+    sub emdash by uniFE31 ;
+    sub uni2015 by uniFE31 ; ### U+2015
+    sub endash by uniFE32 ;
+    sub guillemotleft by uniFE3D ;
+    sub guillemotright by uniFE3E ;
+    ###
+    sub periodcentered by uni30FB ;
+    #####
+    sub twodotenleader by uniFE30 ;
+    sub ellipsis by uniFE19 ;
+    sub uni3001 by uniFE11 ;
+    sub uni3002 by uniFE12 ;
+    sub uni3008 by uniFE3F ;
+    sub uni3009 by uniFE40 ;
+    sub uni300A by uniFE3D ;
+    sub uni300B by uniFE3E ;
+    sub uni300C by uniFE41 ;
+    sub uni300D by uniFE42 ;
+    sub uni300E by uniFE43 ;
+    sub uni300F by uniFE44 ;
+    sub uni3010 by uniFE3B ;
+    sub uni3011 by uniFE3C ;
+    sub uni3014 by uniFE39 ;
+    sub uni3015 by uniFE3A ;
+    sub uni302E by uni302E.vert ;
+    sub uni302F by uni302F.vert ;
+#    sub uniFF01 by uniFE15 ; # !
+    sub uniFF08 by uniFE35 ;
+    sub uniFF09 by uniFE36 ;
+    sub uniFF0C by uniFE11 ;
+    sub uniFF0E by uniFE12 ;
+    sub uniFF1A by uniFE13 ;
+    sub uniFF1B by uniFE14 ;
+    sub uniFF1C by uniFE3F ;
+    sub uniFF1E by uniFE40 ;
+#    sub uniFF1F by uniFE16 ; # ?
+    sub uniFF3B by uniFE47 ;
+    sub uniFF3D by uniFE48 ;
+    sub uniFF5B by uniFE37 ;
+    sub uniFF5D by uniFE38 ;
+} vert;
+
+feature vhal {
+    # closings
+    pos [
+	uniFE10 uniFE11 uniFE12 
+	uniFE18 uniFE36 uniFE38
+	uniFE3A uniFE3C uniFE3E
+	uniFE40 uniFE42 uniFE44 
+	uniFE48
+    ] <0 0 0 -525>;
+
+    # openings
+    pos [
+	uniFE17 uniFE35 uniFE37
+	uniFE39 uniFE3B uniFE3D
+	uniFE3F uniFE41 uniFE43
+	uniFE47 
+    ] <0 525 0 -525>;
+
+    # centered
+    pos [
+	periodcentered
+	uni30FB
+	uniFE32 # vertical endash
+    ] <0 262 0 -525>;
+} vhal;
+

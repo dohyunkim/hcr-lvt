@@ -1,0 +1,57 @@
+Making HCR LVT fonts
+====================
+
+Scripts and feature files for making HCR LVT fonts
+
+Hamchorom (HCR) fonts are Korean fonts bundled in Hangul Word Processor
+(HWP) program, and the fonts are freely downloadable at
+http://www.hancom.co.kr/downLoad.downView.do?targetRow=1&seqno=3136&mcd_save=005.
+
+The fonts contain Old Hangul glyphs for conjoning jamo characters.
+As they however do not provide relevant GSUB opentype tables,
+applications other than HWP cannot process Old Hangul characters
+properly, giving only quite unpleasant results.
+
+The purpose of this project is to add GSUB and GPOS tables to HCR fonts
+for processing Old Hangul documents. Additionally, vhea and vmtx tables
+will be added to support vertical writing mode. Again, 'LVT' will be
+added to the family name of these fonts, so as to be distinguished from
+original HCR fonts.
+
+Hancom Inc.(http://www.hancom.com) is the copyright holder of HCR fonts
+and HCR LVT variants as well, which can be freely downloaded and
+modified, but cannot be sold for commerical purposes.
+
+
+Building
+--------
+
+0. applications/tools needed
+
+	* fontforge (http://github.com/fontforge/fontforge)
+	* fonttools (http://github.com/behdad/fonttools)
+	* perl
+	* python
+
+1. download original HCR fonts (see above) into the same directory as
+   these scripts exist.
+
+2-1. For TeX or Linux OS, run shell command as follows:
+
+     for F in HANBatang HANBatangB HANDotum HANDotumB; \
+     do make HCRTTF=$F; \
+     done
+
+2-2. For Mac OS X, run this shell command:
+
+     for F in HANBatang HANBatangB HANDotum HANDotumB; \
+     do make -f Makefile-win HCRTTF=$F; \
+     done
+
+2-3. For Windows OS, run this shell command:
+
+     for F in HANBatang HANBatangB HANDotum HANDotumB; \
+     do make -f Makefile-mac HCRTTF=$F; \
+     done
+
+That's all.

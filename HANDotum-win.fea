@@ -1,0 +1,14 @@
+
+include(HCR-header.fea)
+
+include(HCR-ccmp.fea)
+
+include(HCR-yethangul-win.fea)
+
+include(HCR-latin.fea)
+include(HCRfrac-DT.fea)
+
+include(HCR-nalt.fea)
+
+include(HCR-vert-win.fea)
+

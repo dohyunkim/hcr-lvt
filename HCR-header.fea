@@ -1,0 +1,158 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem hang dflt;
+languagesystem hang KOR ;
+
+@newcho = [
+    uni1100 uni1101 uni1102 uni1103 uni1104 uni1105 uni1106 uni1107 uni1108
+    uni1109 uni110A uni110B uni110C uni110D uni110E uni110F uni1110 uni1111
+    uni1112
+];
+
+@newjung = [
+    uni1161 uni1162 uni1163 uni1164 uni1165 uni1166 uni1167 uni1168 uni1169
+    uni116A uni116B uni116C uni116D uni116E uni116F uni1170 uni1171 uni1172
+    uni1173 uni1174 uni1175
+];
+
+@newjong = [
+    uni11A8 uni11A9 uni11AA uni11AB uni11AC uni11AD uni11AE uni11AF
+    uni11B0 uni11B1 uni11B2 uni11B3 uni11B4 uni11B5 uni11B6 uni11B7
+    uni11B8 uni11B9 uni11BA uni11BB uni11BC uni11BD uni11BE uni11BF
+    uni11C0 uni11C1 uni11C2
+];
+
+@oldchosong = [
+    uni1113 uni1114 uni1115 uni1116 uni1117 uni1118 uni1119 uni111A
+    uni111B uni111C uni111D uni111E uni111F uni1120 uni1121 uni1122 uni1123
+    uni1124 uni1125 uni1126 uni1127 uni1128 uni1129 uni112A uni112B uni112C
+    uni112D uni112E uni112F uni1130 uni1131 uni1132 uni1133 uni1134 uni1135
+    uni1136 uni1137 uni1138 uni1139 uni113A uni113B uni113C uni113D uni113E
+    uni113F uni1140 uni1141 uni1142 uni1143 uni1144 uni1145 uni1146 uni1147
+    uni1148 uni1149 uni114A uni114B uni114C uni114D uni114E uni114F uni1150
+    uni1151 uni1152 uni1153 uni1154 uni1155 uni1156 uni1157 uni1158 uni1159
+    uni115A uni115B uni115C uni115D uni115E uni115F uniA960 uniA961 uniA962
+    uniA963 uniA964 uniA965 uniA966 uniA967 uniA968 uniA969 uniA96A uniA96B
+    uniA96C uniA96D uniA96E uniA96F uniA970 uniA971 uniA972 uniA973 uniA974
+    uniA975 uniA976 uniA977 uniA978 uniA979 uniA97A uniA97B uniA97C
+];
+
+@chosong = [
+    @newcho @oldchosong
+];
+
+@oldjungsong = [
+    uni1160 uni1176 uni1177 uni1178 uni1179 uni117A
+    uni117B uni117C uni117D uni117E uni117F uni1180 uni1181 uni1182 uni1183
+    uni1184 uni1185 uni1186 uni1187 uni1188 uni1189 uni118A uni118B uni118C
+    uni118D uni118E uni118F uni1190 uni1191 uni1192 uni1193 uni1194 uni1195
+    uni1196 uni1197 uni1198 uni1199 uni119A uni119B uni119C uni119D uni119E
+    uni119F uni11A0 uni11A1 uni11A2 uni11A3 uni11A4 uni11A5 uni11A6 uni11A7
+    uniD7B0 uniD7B1 uniD7B2 uniD7B3 uniD7B4 uniD7B5 uniD7B6 uniD7B7 uniD7B8
+    uniD7B9 uniD7BA uniD7BB uniD7BC uniD7BD uniD7BE uniD7BF uniD7C0 uniD7C1
+    uniD7C2 uniD7C3 uniD7C4 uniD7C5 uniD7C6
+];
+
+@jungsong = [
+    @newjung @oldjungsong
+];
+
+@oldjongsong = [
+    uni11C3 uni11C4 uni11C5 uni11C6 uni11C7 uni11C8 uni11C9 uni11CA uni11CB
+    uni11CC uni11CD uni11CE uni11CF uni11D0 uni11D1 uni11D2 uni11D3 uni11D4
+    uni11D5 uni11D6 uni11D7 uni11D8 uni11D9 uni11DA uni11DB uni11DC uni11DD
+    uni11DE uni11DF uni11E0 uni11E1 uni11E2 uni11E3 uni11E4 uni11E5 uni11E6
+    uni11E7 uni11E8 uni11E9 uni11EA uni11EB uni11EC uni11ED uni11EE uni11EF 
+    uni11F0 uni11F1 uni11F2 uni11F3 uni11F4 uni11F5 uni11F6 uni11F7 uni11F8
+    uni11F9 uni11FA uni11FB uni11FC uni11FD uni11FE uni11FF uniD7CB uniD7CC
+    uniD7CD uniD7CE uniD7CF uniD7D0 uniD7D1 uniD7D2 uniD7D3 uniD7D4 uniD7D5
+    uniD7D6 uniD7D7 uniD7D8 uniD7D9 uniD7DA uniD7DB uniD7DC uniD7DD uniD7DE
+    uniD7DF uniD7E0 uniD7E1 uniD7E2 uniD7E3 uniD7E4 uniD7E5 uniD7E6 uniD7E7
+    uniD7E8 uniD7E9 uniD7EA uniD7EB uniD7EC uniD7ED uniD7EE uniD7EF uniD7F0
+    uniD7F1 uniD7F2 uniD7F3 uniD7F4 uniD7F5 uniD7F6 uniD7F7 uniD7F8 uniD7F9
+    uniD7FA uniD7FB
+];
+
+@jongsong = [
+    @newjong @oldjongsong
+];
+
+@jamojung = [
+   uni1161 uni1162 uni1163 uni1164 uni1165 uni1166 uni1167 uni1168 
+   uni1169 uni116A uni116B uni116C uni116D uni116E uni116F uni1170 
+   uni1171 uni1172 uni1173 uni1174 uni1175 uni1184 uni1185 uni1188 
+   uni1191 uni1192 uni1194 uni119E uni11A1
+];
+
+@latinnumber = [
+    one two three four five six seven eight nine zero
+];
+
+@LVsyllables = [
+	uniAC00 uniAC1C uniAC38 uniAC54 uniAC70 uniAC8C uniACA8 uniACC4 
+	uniACE0 uniACFC uniAD18 uniAD34 uniAD50 uniAD6C uniAD88 uniADA4 
+	uniADC0 uniADDC uniADF8 uniAE14 uniAE30 uniAE4C uniAE68 uniAE84 
+	uniAEA0 uniAEBC uniAED8 uniAEF4 uniAF10 uniAF2C uniAF48 uniAF64 
+	uniAF80 uniAF9C uniAFB8 uniAFD4 uniAFF0 uniB00C uniB028 uniB044 
+	uniB060 uniB07C uniB098 uniB0B4 uniB0D0 uniB0EC uniB108 uniB124 
+	uniB140 uniB15C uniB178 uniB194 uniB1B0 uniB1CC uniB1E8 uniB204 
+	uniB220 uniB23C uniB258 uniB274 uniB290 uniB2AC uniB2C8 uniB2E4 
+	uniB300 uniB31C uniB338 uniB354 uniB370 uniB38C uniB3A8 uniB3C4 
+	uniB3E0 uniB3FC uniB418 uniB434 uniB450 uniB46C uniB488 uniB4A4 
+	uniB4C0 uniB4DC uniB4F8 uniB514 uniB530 uniB54C uniB568 uniB584 
+	uniB5A0 uniB5BC uniB5D8 uniB5F4 uniB610 uniB62C uniB648 uniB664 
+	uniB680 uniB69C uniB6B8 uniB6D4 uniB6F0 uniB70C uniB728 uniB744 
+	uniB760 uniB77C uniB798 uniB7B4 uniB7D0 uniB7EC uniB808 uniB824 
+	uniB840 uniB85C uniB878 uniB894 uniB8B0 uniB8CC uniB8E8 uniB904 
+	uniB920 uniB93C uniB958 uniB974 uniB990 uniB9AC uniB9C8 uniB9E4 
+	uniBA00 uniBA1C uniBA38 uniBA54 uniBA70 uniBA8C uniBAA8 uniBAC4 
+	uniBAE0 uniBAFC uniBB18 uniBB34 uniBB50 uniBB6C uniBB88 uniBBA4 
+	uniBBC0 uniBBDC uniBBF8 uniBC14 uniBC30 uniBC4C uniBC68 uniBC84 
+	uniBCA0 uniBCBC uniBCD8 uniBCF4 uniBD10 uniBD2C uniBD48 uniBD64 
+	uniBD80 uniBD9C uniBDB8 uniBDD4 uniBDF0 uniBE0C uniBE28 uniBE44 
+	uniBE60 uniBE7C uniBE98 uniBEB4 uniBED0 uniBEEC uniBF08 uniBF24 
+	uniBF40 uniBF5C uniBF78 uniBF94 uniBFB0 uniBFCC uniBFE8 uniC004 
+	uniC020 uniC03C uniC058 uniC074 uniC090 uniC0AC uniC0C8 uniC0E4 
+	uniC100 uniC11C uniC138 uniC154 uniC170 uniC18C uniC1A8 uniC1C4 
+	uniC1E0 uniC1FC uniC218 uniC234 uniC250 uniC26C uniC288 uniC2A4 
+	uniC2C0 uniC2DC uniC2F8 uniC314 uniC330 uniC34C uniC368 uniC384 
+	uniC3A0 uniC3BC uniC3D8 uniC3F4 uniC410 uniC42C uniC448 uniC464 
+	uniC480 uniC49C uniC4B8 uniC4D4 uniC4F0 uniC50C uniC528 uniC544 
+	uniC560 uniC57C uniC598 uniC5B4 uniC5D0 uniC5EC uniC608 uniC624 
+	uniC640 uniC65C uniC678 uniC694 uniC6B0 uniC6CC uniC6E8 uniC704 
+	uniC720 uniC73C uniC758 uniC774 uniC790 uniC7AC uniC7C8 uniC7E4 
+	uniC800 uniC81C uniC838 uniC854 uniC870 uniC88C uniC8A8 uniC8C4 
+	uniC8E0 uniC8FC uniC918 uniC934 uniC950 uniC96C uniC988 uniC9A4 
+	uniC9C0 uniC9DC uniC9F8 uniCA14 uniCA30 uniCA4C uniCA68 uniCA84 
+	uniCAA0 uniCABC uniCAD8 uniCAF4 uniCB10 uniCB2C uniCB48 uniCB64 
+	uniCB80 uniCB9C uniCBB8 uniCBD4 uniCBF0 uniCC0C uniCC28 uniCC44 
+	uniCC60 uniCC7C uniCC98 uniCCB4 uniCCD0 uniCCEC uniCD08 uniCD24 
+	uniCD40 uniCD5C uniCD78 uniCD94 uniCDB0 uniCDCC uniCDE8 uniCE04 
+	uniCE20 uniCE3C uniCE58 uniCE74 uniCE90 uniCEAC uniCEC8 uniCEE4 
+	uniCF00 uniCF1C uniCF38 uniCF54 uniCF70 uniCF8C uniCFA8 uniCFC4 
+	uniCFE0 uniCFFC uniD018 uniD034 uniD050 uniD06C uniD088 uniD0A4 
+	uniD0C0 uniD0DC uniD0F8 uniD114 uniD130 uniD14C uniD168 uniD184 
+	uniD1A0 uniD1BC uniD1D8 uniD1F4 uniD210 uniD22C uniD248 uniD264 
+	uniD280 uniD29C uniD2B8 uniD2D4 uniD2F0 uniD30C uniD328 uniD344 
+	uniD360 uniD37C uniD398 uniD3B4 uniD3D0 uniD3EC uniD408 uniD424 
+	uniD440 uniD45C uniD478 uniD494 uniD4B0 uniD4CC uniD4E8 uniD504 
+	uniD520 uniD53C uniD558 uniD574 uniD590 uniD5AC uniD5C8 uniD5E4 
+	uniD600 uniD61C uniD638 uniD654 uniD670 uniD68C uniD6A8 uniD6C4 
+	uniD6E0 uniD6FC uniD718 uniD734 uniD750 uniD76C uniD788 
+];
+
+## feature aalt {
+## 	feature dlig;
+## 	feature dnom;
+## 	feature fwid;
+## 	feature hist;
+## 	feature hlig;
+## 	feature hwid;
+## 	feature liga;
+## 	feature nalt;
+## 	feature numr;
+## 	feature pwid;
+## 	feature sinf;
+## 	feature sups;
+## 	feature vrt2;
+## } aalt;

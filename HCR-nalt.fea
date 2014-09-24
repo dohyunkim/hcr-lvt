@@ -1,0 +1,554 @@
+lookup HCR_ALTS_SUB {
+#			circle
+sub uniAC80	 by  uF0094   ; #검
+sub uniC6B0	 by  uni327E  ; #우 = uF0095 
+sub uniD488	 by  uF0097   ; #품
+} HCR_ALTS_SUB;
+
+lookup HCR_ALTS {
+#			circle	square	bcircle	bsquare	paren
+sub uni3131	 from [ uni3260	uF01E6	uF017B	uF0251	uni3200	]; # ㄱ
+sub uni3134	 from [ uni3261	uF01E7	uF017C	uF0252	uni3201	]; # ㄴ 
+sub uni3137	 from [ uni3262	uF01E8	uF017D	uF0253	uni3202	]; # ㄷ 
+sub uni3139	 from [ uni3263	uF01E9	uF017E	uF0254	uni3203	]; # ㄹ 
+sub uni3141	 from [ uni3264	uF01EA	uF017F	uF0255	uni3204	]; # ㅁ 
+sub uni3142	 from [ uni3265	uF01EB	uF0180	uF0256	uni3205	]; # ㅂ 
+sub uni3145	 from [ uni3266	uF01EC	uF0181	uF0257	uni3206	]; # ㅅ
+sub uni3147	 from [ uni3267	uF01ED	uF0182	uF0258	uni3207	]; # ㅇ 
+sub uni3148	 from [ uni3268	uF01EE	uF0183	uF0259	uni3208	]; # ㅈ
+sub uni314A	 from [ uni3269	uF01EF	uF0184	uF025A	uni3209	]; # ㅊ
+sub uni314B	 from [ uni326A	uF01F0	uF0185	uF025B	uni320A	]; # ㅋ 
+sub uni314C	 from [ uni326B	uF01F1	uF0186	uF025C	uni320B	]; # ㅌ 
+sub uni314D	 from [ uni326C	uF01F2	uF0187	uF025D	uni320C ]; # ㅍ
+sub uni314E	 from [ uni326D	uF01F3	uF0188	uF025E	uni320D	]; # ㅎ 
+#		   rsquare	circle	square	bcircle	bsquare	paren
+sub uniAC00 from [ uF009B	uni326E	uF01F4	uF0189	uF025F	uni320E ]; # 가
+sub uniB098 from [ uF009C	uni326F	uF01F5	uF018A	uF0260	uni320F ]; # 나
+sub uniB2E4 from [ uF009D	uni3270	uF01F6	uF018B	uF0261	uni3210 ]; # 다
+sub uniB77C from [ uF009E	uni3271	uF01F7	uF018C	uF0262	uni3211 ]; # 라
+sub uniB9C8 from [ uF009F	uni3272	uF01F8	uF018D	uF0263	uni3212 ]; # 마
+sub uniBC14 from [ uF00A0	uni3273	uF01F9	uF018E	uF0264	uni3213 ]; # 바
+sub uniC0AC from [ uF00A1	uni3274	uF01FA	uF018F	uF0265	uni3214 ]; # 사
+sub uniC544 from [ uF00A2	uni3275	uF01FB	uF0190	uF0266	uni3215 ]; # 아
+sub uniC790 from [ uF00A3	uni3276	uF01FC	uF0191	uF0267	uni3216 ]; # 자
+sub uniCC28 from [ uF00A4	uni3277	uF01FD	uF0192	uF0268	uni3217 ]; # 차
+sub uniCE74 from [ uF00A5	uni3278	uF01FE	uF0193	uF0269	uni3218 ]; # 카
+sub uniD0C0 from [ uF00A6	uni3279	uF01FF	uF0194	uF026A	uni3219 ]; # 타
+sub uniD30C from [ uF00A7	uni327A	uF0200	uF0195	uF026B	uni321A ]; # 파
+sub uniD558 from [ uF00A8	uni327B	uF0201	uF0196	uF026C	uni321B ]; # 하
+#		   rsquare	circle		paren
+sub uni314F from [ uF00A9	uF00F3	]; # ㅏ
+sub uni3151 from [ uF00AA	uF00F4	]; # ㅑ
+sub uni3153 from [ uF00AB	uF00F5	]; # ㅓ
+sub uni3155 from [ uF00AC	uF00F6	]; # ㅕ
+sub uni3157 from [ uF00AD	uF00F7	]; # ㅗ
+sub uni315B from [ uF00AE	uF00F8	]; # ㅛ
+sub uni315C from [ uF00AF	uF00F9	]; # ㅜ
+sub uni3160 from [ uF00B0	uF00FA	]; # ㅠ
+sub uni3161 from [ uF00B1	uF00FB	]; # ㅡ
+sub uni3163 from [ uF00B2	uF00FC	]; # ㅣ
+sub uniAC10 from [ uF00B3	uF00FD	]; # 감 
+sub uniAD00 from [ uF00B4	uF00FE	]; # 관 
+sub uniADC0 from [ uF00B5	uF00FF	]; # 귀 
+sub uniAE00 from [ uF00B6	uF0100	]; # 글 
+sub uniAE08 from [ uF00B7	uF0101	]; # 금 
+sub uniB0A8 from [ uF00B8	uF0102	]; # 남 
+sub uniB0AE from [ uF00B9	uF0103	]; # 낮 
+sub uniB192 from [ uF00BA	uF0104	]; # 높 
+sub uniB2E8 from [ uF00BB	uF0105	]; # 단 
+sub uniB2F5 from [ uF00BC	uF0106	]; # 답 
+sub uniB300 from [ uF00BD	uF0107	]; # 대 
+sub uniB3C4 from [ uF00BE	uF0108	]; # 도 
+sub uniB3D9 from [ uF00BF	uF0109	]; # 동 
+sub uniB4A4 from [ uF00C0	uF010A	]; # 뒤 
+sub uniB05D from [ uF00C1	uF010B	]; # 끝 
+sub uniB9D0 from [ uF00C2	uF010C	]; # 말 
+sub uniBA85 from [ uF00C3	uF010D	]; # 명 
+sub uniBAA9 from [ uF00C4	uF010E	]; # 목 
+sub uniBB38 from [ uF00C5	uF010F	]; # 문 
+sub uniBBF8 from [ uF00C6	uF0110	]; # 미 
+sub uniBC18 from [ uF00C7	uF0111	]; # 반 
+sub uniBC94 from [ uF00C8	uF0112	]; # 범 
+sub uniBCC0 from [ uF00C9	uF0113	]; # 변 
+sub uniBCF4 from [ uF00CA	uF0114	]; # 보 
+sub uniBCF5 from [ uF00CB	uF0115	]; # 복 
+sub uniBD80 from [ uF00CC	uF0116	]; # 부 
+sub uniBD81 from [ uF00CD	uF0117	]; # 북 
+sub uniBE44 from [ uF00CE	uF0118	]; # 비 
+sub uniC0C1 from [ uF00CF	uF0119	]; # 상 
+sub uniC11C from [ uF00D0	uF011A	]; # 서 
+sub uniC18C from [ uF00D1	uF011B	]; # 소 
+sub uniC18D from [ uF00D2	uF011C	]; # 속 
+sub uniC218 from [ uF00D3	uF011D	]; # 수 
+sub uniC2E0 from [ uF00D4	uF011E	]; # 신 
+sub uniC555 from [ uF00D5	uF011F	]; # 압 
+sub uniC57D from [ uF00D6	uF0120	]; # 약 
+sub uniC5EC from [ uF00D7	uF0121	]; # 여 
+sub uniC5ED from [ uF00D8	uF0122	]; # 역 
+sub uniC601 from [ uF00D9	uF0123	]; # 영 
+sub uniC608 from [ uF00DA	uF0124	]; # 예 
+sub uniC624 from [ uF00DB	uF0125	]; # 오 
+sub uniC6D0 from [ uF00DC	uF0126	]; # 원 
+sub uniC6D4 from [ uF00DD	uF0127	]; # 월 
+sub uniC720 from [ uF00DE	uF0128	]; # 유 
+sub uniC758 from [ uF00DF	uF0129	]; # 의 
+sub uniC74C from [ uF00E0	uF012A	]; # 음 
+sub uniC778 from [ uF00E1	uF012B	]; # 인 
+sub uniC77C from [ uF00E2	uF012C	]; # 일 
+sub uniC785 from [ uF00E3	uF012D	]; # 입 
+sub uniC804 from [ uF00E4	uF012E	]; # 전 
+sub uniC811 from [ uF00E5	uF012F	]; # 접 
+sub uniC870 from [ uF00E6	uF0130	]; # 조 
+sub uniC874 from [ uF00E7	uF0131	]; # 존 
+sub uniC8FC from [ uF00E8	uF0132		uni321C	]; # 주 
+sub uniC900 from [ uF00E9	uF0133	]; # 준 
+sub uniC911 from [ uF00EA	uF0134	]; # 중 
+sub uniCC38 from [ uF00EB	uF0135	]; # 참 
+sub uniD1A0 from [ uF00EC	uF0136	]; # 토 
+sub uniD2B9 from [ uF00ED	uF0137	]; # 특 
+sub uniD45C from [ uF00EE	uF0138	]; # 표 
+sub uniD574 from [ uF00EF	uF0139	]; # 해 
+sub uniD615 from [ uF00F0	uF013A	]; # 형 
+sub uniD654 from [ uF00F1	uF013B	]; # 화 
+sub uniD65C from [ uF00F2	uF013C	]; # 활
+#		circle	square	bcircle	bsquare	paren	full	keyb
+sub A	 from [ uni24B6	uF01B2	uF0147	uF021D		uniFF21	uF037D ];
+sub B	 from [ uni24B7	uF01B3	uF0148	uF021E		uniFF22	uF037E ];
+sub C	 from [ uni24B8	uF01B4	uF0149	uF021F          uniFF23 uF037F ];
+sub D	 from [ uni24B9	uF01B5	uF014A	uF0220          uniFF24 uF0380 ];
+sub E	 from [ uni24BA	uF01B6	uF014B	uF0221          uniFF25 uF0381 ];
+sub F	 from [ uni24BB	uF01B7	uF014C	uF0222          uniFF26 uF0382 ];
+sub G	 from [ uni24BC	uF01B8	uF014D	uF0223          uniFF27 uF0383 ];
+sub H	 from [ uni24BD	uF01B9	uF014E	uF0224          uniFF28 uF0384 ];
+sub I	 from [ uni24BE	uF01BA	uF014F	uF0225          uniFF29 uF0385 ];
+sub J	 from [ uni24BF	uF01BB	uF0150	uF0226          uniFF2A uF0386 ];
+sub K	 from [ uni24C0	uF01BC	uF0151	uF0227          uniFF2B uF0387 ];
+sub L	 from [ uni24C1	uF01BD	uF0152	uF0228          uniFF2C uF0388 ];
+sub M	 from [ uni24C2	uF01BE	uF0153	uF0229          uniFF2D uF0389 ];
+sub N	 from [ uni24C3	uF01BF	uF0154	uF022A          uniFF2E uF038A ];
+sub O	 from [ uni24C4	uF01C0	uF0155	uF022B          uniFF2F uF038B ];
+sub P	 from [ uni24C5	uF01C1	uF0156	uF022C          uniFF30 uF038C ];
+sub Q	 from [ uni24C6	uF01C2	uF0157	uF022D          uniFF31 uF038D ];
+sub R	 from [ uni24C7	uF01C3	uF0158	uF022E          uniFF32 uF038E ];
+sub S	 from [ uni24C8	uF01C4	uF0159	uF022F          uniFF33 uF038F ];
+sub T	 from [ uni24C9	uF01C5	uF015A	uF0230          uniFF34 uF0390 ];
+sub U	 from [ uni24CA	uF01C6	uF015B	uF0231          uniFF35 uF0391 ];
+sub V	 from [ uni24CB	uF01C7	uF015C	uF0232          uniFF36 uF0392 ];
+sub W	 from [ uni24CC	uF01C8	uF015D	uF0233          uniFF37 uF0393 ];
+sub X	 from [ uni24CD	uF01C9	uF015E	uF0234          uniFF38 uF0394 ];
+sub Y	 from [ uni24CE	uF01CA	uF015F	uF0235          uniFF39 uF0395 ];
+sub Z	 from [ uni24CF	uF01CB	uF0160	uF0236		uniFF3A uF0396 ];
+sub a	 from [ uni24D0	uF01CC	uF0161	uF0237	uni249C	uniFF41 ];
+sub b	 from [ uni24D1	uF01CD	uF0162	uF0238	uni249D uniFF42 ];
+sub c	 from [ uni24D2	uF01CE	uF0163	uF0239	uni249E uniFF43 ];
+sub d	 from [ uni24D3	uF01CF	uF0164	uF023A	uni249F uniFF44 ];
+sub e	 from [ uni24D4	uF01D0	uF0165	uF023B	uni24A0 uniFF45 ];
+sub f	 from [ uni24D5	uF01D1	uF0166	uF023C	uni24A1 uniFF46 ];
+sub g	 from [ uni24D6	uF01D2	uF0167	uF023D	uni24A2 uniFF47 ];
+sub h	 from [ uni24D7	uF01D3	uF0168	uF023E	uni24A3 uniFF48 ];
+sub i	 from [ uni24D8	uF01D4	uF0169	uF023F	uni24A4 uniFF49 ];
+sub j	 from [ uni24D9	uF01D5	uF016A	uF0240	uni24A5 uniFF4A ];
+sub k	 from [ uni24DA	uF01D6	uF016B	uF0241	uni24A6 uniFF4B ];
+sub l	 from [ uni24DB	uF01D7	uF016C	uF0242	uni24A7 uniFF4C ];
+sub m	 from [ uni24DC	uF01D8	uF016D	uF0243	uni24A8 uniFF4D ];
+sub n	 from [ uni24DD	uF01D9	uF016E	uF0244	uni24A9 uniFF4E ];
+sub o	 from [ uni24DE	uF01DA	uF016F	uF0245	uni24AA uniFF4F ];
+sub p	 from [ uni24DF	uF01DB	uF0170	uF0246	uni24AB uniFF50 ];
+sub q	 from [ uni24E0	uF01DC	uF0171	uF0247	uni24AC uniFF51 ];
+sub r	 from [ uni24E1	uF01DD	uF0172	uF0248	uni24AD uniFF52 ];
+sub s	 from [ uni24E2	uF01DE	uF0173	uF0249	uni24AE uniFF53 ];
+sub t	 from [ uni24E3	uF01DF	uF0174	uF024A	uni24AF uniFF54 ];
+sub u	 from [ uni24E4	uF01E0	uF0175	uF024B	uni24B0 uniFF55 ];
+sub v	 from [ uni24E5	uF01E1	uF0176	uF024C	uni24B1 uniFF56 ];
+sub w	 from [ uni24E6	uF01E2	uF0177	uF024D	uni24B2 uniFF57 ];
+sub x	 from [ uni24E7	uF01E3	uF0178	uF024E	uni24B3 uniFF58 ];
+sub y	 from [ uni24E8	uF01E4	uF0179	uF024F	uni24B4 uniFF59 ];
+sub z	 from [ uni24E9	uF01E5	uF017A	uF0250	uni24B5 uniFF5A ];
+#		 circle  paren   numdot  dblcirc dingcir sanscir sansneg full    sups    subs    circ   ..     bcirc  ..     square ..     ..     bsquar ..            
+sub zero  from [ uni24EA zero    zero    zero    zero    zero    zero    uniFF10 uni2070 uni2080 uF0288 uF0292 uF029C uF02A6 uF02B0 zero   uF02C3 uF02CD zero   uF02E0 uF0490 uF049A uF04A4 uF04AE uF04B8 uF04C2 uF04CC uF04D6 uF04E0 uF04EA ];
+sub one   from [ uni2460 uni2474 uni2488 uni24F5 uni2776 uni2780 uni278A uniFF11 uni00B9 uni2081 uF0289 uF0293 uF029D uF02A7 uF02B1 uF02BA uF02C4 uF02CE uF02D7 uF02E1 uF0491 uF049B uF04A5 uF04AF uF04B9 uF04C3 uF04CD uF04D7 uF04E1 uF04EB ];
+sub two   from [ uni2461 uni2475 uni2489 uni24F6 uni2777 uni2781 uni278B uniFF12 uni00B2 uni2082 uF028A uF0294 uF029E uF02A8 uF02B2 uF02BB uF02C5 uF02CF uF02D8 uF02E2 uF0492 uF049C uF04A6 uF04B0 uF04BA uF04C4 uF04CE uF04D8 uF04E2 uF04EC ];
+sub three from [ uni2462 uni2476 uni248A uni24F7 uni2778 uni2782 uni278C uniFF13 uni00B3 uni2083 uF028B uF0295 uF029F uF02A9 uF02B3 uF02BC uF02C6 uF02D0 uF02D9 uF02E3 uF0493 uF049D uF04A7 uF04B1 uF04BB uF04C5 uF04CF uF04D9 uF04E3 uF04ED ];
+sub four  from [ uni2463 uni2477 uni248B uni24F8 uni2779 uni2783 uni278D uniFF14 uni2074 uni2084 uF028C uF0296 uF02A0 uF02AA uF02B4 uF02BD uF02C7 uF02D1 uF02DA uF02E4 uF0494 uF049E uF04A8 uF04B2 uF04BC uF04C6 uF04D0 uF04DA uF04E4 uF04EE ];
+sub five  from [ uni2464 uni2478 uni248C uni24F9 uni277A uni2784 uni278E uniFF15 uni2075 uni2085 uF028D uF0297 uF02A1 uF02AB uF02B5 uF02BE uF02C8 uF02D2 uF02DB uF02E5 uF0495 uF049F uF04A9 uF04B3 uF04BD uF04C7 uF04D1 uF04DB uF04E5 uF04EF ];
+sub six   from [ uni2465 uni2479 uni248D uni24FA uni277B uni2785 uni278F uniFF16 uni2076 uni2086 uF028E uF0298 uF02A2 uF02AC uF02B6 uF02BF uF02C9 uF02D3 uF02DC uF02E6 uF0496 uF04A0 uF04AA uF04B4 uF04BE uF04C8 uF04D2 uF04DC uF04E6 uF04F0 ];
+sub seven from [ uni2466 uni247A uni248E uni24FB uni277C uni2786 uni2790 uniFF17 uni2077 uni2087 uF028F uF0299 uF02A3 uF02AD uF02B7 uF02C0 uF02CA uF02D4 uF02DD uF02E7 uF0497 uF04A1 uF04AB uF04B5 uF04BF uF04C9 uF04D3 uF04DD uF04E7 uF04F1 ];
+sub eight from [ uni2467 uni247B uni248F uni24FC uni277D uni2787 uni2791 uniFF18 uni2078 uni2088 uF0290 uF029A uF02A4 uF02AE uF02B8 uF02C1 uF02CB uF02D5 uF02DE uF02E8 uF0498 uF04A2 uF04AC uF04B6 uF04C0 uF04CA uF04D4 uF04DE uF04E8 uF04F2 ];
+sub nine  from [ uni2468 uni247C uni2490 uni24FD uni277E uni2788 uni2792 uniFF19 uni2079 uni2089 uF0291 uF029B uF02A5 uF02AF uF02B9 uF02C2 uF02CC uF02D6 uF02DF uF02E9 uF0499 uF04A3 uF04AD uF04B7 uF04C1 uF04CB uF04D5 uF04DF uF04E9 uF04F3 ];
+#			circle	square	bcircle	bsquare	paren
+sub uni4E00	 from [ uni3280	uF0202	uF0197	uF026D	uni3220	]; # 一
+sub uni4E8C	 from [ uni3281	uF0203	uF0198	uF026E	uni3221	]; # 二
+sub uni4E09	 from [ uni3282	uF0204	uF0199	uF026F	uni3222	]; # 三
+sub uni56DB	 from [ uni3283	uF0205	uF019A	uF0270	uni3223	]; # 四
+sub uni4E94	 from [ uni3284	uF0206	uF019B	uF0271	uni3224	]; # 五
+sub uni516D	 from [ uni3285	uF0207	uF019C	uF0272	uni3225	]; # 六
+sub uni4E03	 from [ uni3286	uF0208	uF019D	uF0273	uni3226	]; # 七
+sub uni516B	 from [ uni3287	uF0209	uF019E	uF0274	uni3227	]; # 八
+sub uni4E5D	 from [ uni3288	uF020A	uF019F	uF0275	uni3228	]; # 九
+sub uni5341	 from [ uni3289	uF020B	uF01A0	uF0276	uni3229	]; # 十
+#			circle	square	bcircle	bsquare	paren
+sub uni65E5	 from [ uni3290	uF0216	uF01AB	uF0281	uni3230	]; # 日
+sub uni6708	 from [ uni328A	uF0217	uF01AC	uF0282	uni322A	]; # 月
+sub uni706B	 from [ uni328B	uF0218	uF01AD	uF0283	uni322B	]; # 火
+sub uni6C34	 from [ uni328C	uF0219	uF01AE	uF0284	uni322C	]; # 水
+sub uni6728	 from [ uni328D	uF021A	uF01AF	uF0285	uni322D	]; # 木
+sub uni91D1	 from [ uni328E	uF021B	uF01B0	uF0286	uni322E	]; # 金
+sub uni571F	 from [ uni328F	uF021C	uF01B1	uF0287	uni322F	]; # 土
+} HCR_ALTS;
+
+feature nalt{
+    lookup HCR_ALTS_SUB;
+    lookup HCR_ALTS;
+} nalt;
+
+feature fwid {
+# sub space		by uni3164 ;
+sub exclam		by uniFF01 ;
+sub quotedbl		by uniFF02 ;
+sub numbersign		by uniFF03 ;
+sub dollar		by uniFF04 ;
+sub percent		by uniFF05 ;
+sub ampersand		by uniFF06 ;
+sub quotesingle 	by uniFF07 ;
+sub parenleft		by uniFF08 ;
+sub parenright		by uniFF09 ;
+sub asterisk		by uniFF0A ;
+sub plus		by uniFF0B ;
+sub comma		by uniFF0C ;
+sub hyphen		by uniFF0D ;
+sub period		by uniFF0E ;
+sub slash		by uniFF0F ;
+sub zero		by uniFF10 ;
+sub one			by uniFF11 ;
+sub two			by uniFF12 ;
+sub three		by uniFF13 ;
+sub four		by uniFF14 ;
+sub five		by uniFF15 ;
+sub six			by uniFF16 ;
+sub seven		by uniFF17 ;
+sub eight		by uniFF18 ;
+sub nine		by uniFF19 ;
+sub colon		by uniFF1A ;
+sub semicolon		by uniFF1B ;
+sub less		by uniFF1C ;
+sub equal		by uniFF1D ;
+sub greater		by uniFF1E ;
+sub question		by uniFF1F ;
+sub at			by uniFF20 ;
+sub A			by uniFF21 ;
+sub B			by uniFF22 ;
+sub C			by uniFF23 ;
+sub D			by uniFF24 ;
+sub E			by uniFF25 ;
+sub F			by uniFF26 ;
+sub G			by uniFF27 ;
+sub H			by uniFF28 ;
+sub I			by uniFF29 ;
+sub J			by uniFF2A ;
+sub K			by uniFF2B ;
+sub L			by uniFF2C ;
+sub M			by uniFF2D ;
+sub N			by uniFF2E ;
+sub O			by uniFF2F ;
+sub P			by uniFF30 ;
+sub Q			by uniFF31 ;
+sub R			by uniFF32 ;
+sub S			by uniFF33 ;
+sub T			by uniFF34 ;
+sub U			by uniFF35 ;
+sub V			by uniFF36 ;
+sub W			by uniFF37 ;
+sub X			by uniFF38 ;
+sub Y			by uniFF39 ;
+sub Z			by uniFF3A ;
+sub bracketleft		by uniFF3B ;
+sub backslash		by uniFF3C ;
+sub bracketright	by uniFF3D ;
+sub circumflex		by uniFF3E ;
+sub underscore		by uniFF3F ;
+sub grave		by uniFF40 ;
+sub a			by uniFF41 ;
+sub b			by uniFF42 ;
+sub c			by uniFF43 ;
+sub d			by uniFF44 ;
+sub e			by uniFF45 ;
+sub f			by uniFF46 ;
+sub g			by uniFF47 ;
+sub h			by uniFF48 ;
+sub i			by uniFF49 ;
+sub j			by uniFF4A ;
+sub k			by uniFF4B ;
+sub l			by uniFF4C ;
+sub m			by uniFF4D ;
+sub n			by uniFF4E ;
+sub o			by uniFF4F ;
+sub p			by uniFF50 ;
+sub q			by uniFF51 ;
+sub r			by uniFF52 ;
+sub s			by uniFF53 ;
+sub t			by uniFF54 ;
+sub u			by uniFF55 ;
+sub v			by uniFF56 ;
+sub w			by uniFF57 ;
+sub x			by uniFF58 ;
+sub y			by uniFF59 ;
+sub z			by uniFF5A ;
+sub braceleft		by uniFF5B ;
+sub bar			by uniFF5C ;
+sub braceright		by uniFF5D ;
+sub tilde		by uniFF5E ;
+sub cent		by uniFFE0 ;
+sub sterling		by uniFFE1 ;
+sub logicalnot		by uniFFE2 ;
+sub macron		by uniFFE3 ;
+sub brokenbar		by uniFFE4 ;
+sub yen			by uniFFE5 ;
+sub uni20A9		by uniFFE6 ;
+sub uniFF61		by uni3002 ;
+sub uniFF64		by uni3001 ;
+sub uniFF65		by uni30FB ;
+# sub uniFF66		by uni30F2 ;
+# sub uniFF67		by uni30A1 ;
+# sub uniFF68		by uni30A3 ;
+# sub uniFF69		by uni30A5 ;
+# sub uniFF6A		by uni30A7 ;
+# sub uniFF6B		by uni30A9 ;
+# sub uniFF6C		by uni30E3 ;
+# sub uniFF6D		by uni30E5 ;
+# sub uniFF6E		by uni30E7 ;
+# sub uniFF6F		by uni30C3 ;
+# sub uniFF70		by uni30FC ;
+# sub uniFF71		by uni30A2 ;
+# sub uniFF72		by uni30A4 ;
+# sub uniFF73		by uni30A6 ;
+# sub uniFF74		by uni30A8 ;
+# sub uniFF75		by uni30AA ;
+# sub uniFF76		by uni30AB ;
+# sub uniFF77		by uni30AD ;
+# sub uniFF78		by uni30AF ;
+# sub uniFF79		by uni30B1 ;
+# sub uniFF7A		by uni30B3 ;
+# sub uniFF7B		by uni30B5 ;
+# sub uniFF7C		by uni30B7 ;
+# sub uniFF7D		by uni30B9 ;
+# sub uniFF7E		by uni30BB ;
+# sub uniFF7F		by uni30BD ;
+# sub uniFF80		by uni30BF ;
+# sub uniFF81		by uni30C1 ;
+# sub uniFF82		by uni30C4 ;
+# sub uniFF83		by uni30C6 ;
+# sub uniFF84		by uni30C8 ;
+# sub uniFF85		by uni30CA ;
+# sub uniFF86		by uni30CB ;
+# sub uniFF87		by uni30CC ;
+# sub uniFF88		by uni30CD ;
+# sub uniFF89		by uni30CE ;
+# sub uniFF8A		by uni30CF ;
+# sub uniFF8B		by uni30D2 ;
+# sub uniFF8C		by uni30D5 ;
+# sub uniFF8D		by uni30D8 ;
+# sub uniFF8E		by uni30DB ;
+# sub uniFF8F		by uni30DE ;
+# sub uniFF90		by uni30DF ;
+# sub uniFF91		by uni30E0 ;
+# sub uniFF92		by uni30E1 ;
+# sub uniFF93		by uni30E2 ;
+# sub uniFF94		by uni30E4 ;
+# sub uniFF95		by uni30E6 ;
+# sub uniFF96		by uni30E8 ;
+# sub uniFF97		by uni30E9 ;
+# sub uniFF98		by uni30EA ;
+# sub uniFF99		by uni30EB ;
+# sub uniFF9A		by uni30EC ;
+# sub uniFF9B		by uni30ED ;
+# sub uniFF9C		by uni30EF ;
+# sub uniFF9D		by uni30F3 ;
+# sub uniFF9E		by uni3099 ;
+# sub uniFF9F		by uni309A ;
+} fwid;
+
+feature hwid {
+sub uni3002		by uniFF61 ;
+sub uni3001		by uniFF64 ;
+sub uni30FB		by uniFF65 ;
+sub uniFF1C		by uni3008 ;
+sub uniFF1E		by uni3009 ;
+sub uniFF3B		by uni3014 ;
+sub uniFF3D		by uni3015 ;
+# sub uni30F2		by uniFF66 ;
+# sub uni30A1		by uniFF67 ;
+# sub uni30A3		by uniFF68 ;
+# sub uni30A5		by uniFF69 ;
+# sub uni30A7		by uniFF6A ;
+# sub uni30A9		by uniFF6B ;
+# sub uni30E3		by uniFF6C ;
+# sub uni30E5		by uniFF6D ;
+# sub uni30E7		by uniFF6E ;
+# sub uni30C3		by uniFF6F ;
+# sub uni30FC		by uniFF70 ;
+# sub uni30A2		by uniFF71 ;
+# sub uni30A4		by uniFF72 ;
+# sub uni30A6		by uniFF73 ;
+# sub uni30A8		by uniFF74 ;
+# sub uni30AA		by uniFF75 ;
+# sub uni30AB		by uniFF76 ;
+# sub uni30AD		by uniFF77 ;
+# sub uni30AF		by uniFF78 ;
+# sub uni30B1		by uniFF79 ;
+# sub uni30B3		by uniFF7A ;
+# sub uni30B5		by uniFF7B ;
+# sub uni30B7		by uniFF7C ;
+# sub uni30B9		by uniFF7D ;
+# sub uni30BB		by uniFF7E ;
+# sub uni30BD		by uniFF7F ;
+# sub uni30BF		by uniFF80 ;
+# sub uni30C1		by uniFF81 ;
+# sub uni30C4		by uniFF82 ;
+# sub uni30C6		by uniFF83 ;
+# sub uni30C8		by uniFF84 ;
+# sub uni30CA		by uniFF85 ;
+# sub uni30CB		by uniFF86 ;
+# sub uni30CC		by uniFF87 ;
+# sub uni30CD		by uniFF88 ;
+# sub uni30CE		by uniFF89 ;
+# sub uni30CF		by uniFF8A ;
+# sub uni30D2		by uniFF8B ;
+# sub uni30D5		by uniFF8C ;
+# sub uni30D8		by uniFF8D ;
+# sub uni30DB		by uniFF8E ;
+# sub uni30DE		by uniFF8F ;
+# sub uni30DF		by uniFF90 ;
+# sub uni30E0		by uniFF91 ;
+# sub uni30E1		by uniFF92 ;
+# sub uni30E2		by uniFF93 ;
+# sub uni30E4		by uniFF94 ;
+# sub uni30E6		by uniFF95 ;
+# sub uni30E8		by uniFF96 ;
+# sub uni30E9		by uniFF97 ;
+# sub uni30EA		by uniFF98 ;
+# sub uni30EB		by uniFF99 ;
+# sub uni30EC		by uniFF9A ;
+# sub uni30ED		by uniFF9B ;
+# sub uni30EF		by uniFF9C ;
+# sub uni30F3		by uniFF9D ;
+# sub uni3099		by uniFF9E ;
+# sub uni309A		by uniFF9F ;
+} hwid;
+
+feature pwid {
+sub uni3164		by space ;
+sub uniFF01		by exclam ;
+sub uniFF02		by quotedbl ;
+sub uniFF03		by numbersign ;
+sub uniFF04		by dollar ;
+sub uniFF05		by percent ;
+sub uniFF06		by ampersand ;
+sub uniFF07		by quotesingle ;
+sub uniFF08		by parenleft ;
+sub uniFF09		by parenright ;
+sub uniFF0A		by asterisk ;
+sub uniFF0B		by plus ;
+sub uniFF0C		by comma ;
+sub uniFF0D		by hyphen ;
+sub uniFF0E		by period ;
+sub uniFF0F		by slash ;
+sub uniFF10		by zero ;
+sub uniFF11		by one ;
+sub uniFF12		by two ;
+sub uniFF13		by three ;
+sub uniFF14		by four ;
+sub uniFF15		by five ;
+sub uniFF16		by six ;
+sub uniFF17		by seven ;
+sub uniFF18		by eight ;
+sub uniFF19		by nine ;
+sub uniFF1A		by colon ;
+sub uniFF1B		by semicolon ;
+sub uniFF1C		by less ;
+sub uniFF1D		by equal ;
+sub uniFF1E		by greater ;
+sub uniFF1F		by question ;
+sub uniFF20		by at ;
+sub uniFF21		by A ;
+sub uniFF22		by B ;
+sub uniFF23		by C ;
+sub uniFF24		by D ;
+sub uniFF25		by E ;
+sub uniFF26		by F ;
+sub uniFF27		by G ;
+sub uniFF28		by H ;
+sub uniFF29		by I ;
+sub uniFF2A		by J ;
+sub uniFF2B		by K ;
+sub uniFF2C		by L ;
+sub uniFF2D		by M ;
+sub uniFF2E		by N ;
+sub uniFF2F		by O ;
+sub uniFF30		by P ;
+sub uniFF31		by Q ;
+sub uniFF32		by R ;
+sub uniFF33		by S ;
+sub uniFF34		by T ;
+sub uniFF35		by U ;
+sub uniFF36		by V ;
+sub uniFF37		by W ;
+sub uniFF38		by X ;
+sub uniFF39		by Y ;
+sub uniFF3A		by Z ;
+sub uniFF3B		by bracketleft ;
+sub uniFF3C		by backslash ;
+sub uniFF3D		by bracketright ;
+sub uniFF3E		by circumflex ;
+sub uniFF3F		by underscore ;
+sub uniFF40		by grave ;
+sub uniFF41		by a ;
+sub uniFF42		by b ;
+sub uniFF43		by c ;
+sub uniFF44		by d ;
+sub uniFF45		by e ;
+sub uniFF46		by f ;
+sub uniFF47		by g ;
+sub uniFF48		by h ;
+sub uniFF49		by i ;
+sub uniFF4A		by j ;
+sub uniFF4B		by k ;
+sub uniFF4C		by l ;
+sub uniFF4D		by m ;
+sub uniFF4E		by n ;
+sub uniFF4F		by o ;
+sub uniFF50		by p ;
+sub uniFF51		by q ;
+sub uniFF52		by r ;
+sub uniFF53		by s ;
+sub uniFF54		by t ;
+sub uniFF55		by u ;
+sub uniFF56		by v ;
+sub uniFF57		by w ;
+sub uniFF58		by x ;
+sub uniFF59		by y ;
+sub uniFF5A		by z ;
+sub uniFF5B		by braceleft ;
+sub uniFF5C		by bar ;
+sub uniFF5D		by braceright ;
+sub uniFF5E		by tilde ;
+sub uni3002		by uniFF61 ;
+sub uni3001		by uniFF64 ;
+sub uniFFE0		by cent ;
+sub uniFFE1		by sterling ;
+sub uniFFE2		by logicalnot ;
+sub uniFFE3		by macron ;
+sub uniFFE4		by brokenbar ;
+sub uniFFE5		by yen ;
+sub uniFFE6		by uni20A9 ;
+} pwid;
+
+feature fwid {
+    pos space   <0  0 185 0> ;
+#    pos [ uniFF0E uniFF0C ] <-333 0 0 0> ;
+} fwid;
+
+#feature hwid {
+#    pos uniFF61 <0 -160 0 0> ; # batang dotum
+#    pos uniFF64 <0 -160 0 0> ; # dotum
+#    pos uniFF65 <0  -70 0 0> ;
+#} hwid;

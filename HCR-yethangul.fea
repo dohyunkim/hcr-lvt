@@ -1,0 +1,58 @@
+
+
+lookup OldChosong {
+# mac os x seems to recompose jamos to syllable after opentype feature process.
+# so we apply ignore rule, without which mac guys say filenames look ugly. 
+#    ignore sub @newcho' @newjung @newjong ;
+    include (lvtl.fea)
+#    ignore sub @newcho' @newjung ;
+    include (lvl.fea)
+} OldChosong;
+
+
+lookup OldJungsong {
+    include (typeh.fea)
+    include (types.fea)
+    include (typen.fea)
+    include (lvtv.fea)
+    include (lvv.fea)
+} OldJungsong;
+
+lookup OldJongsong {
+    include (lvtt.fea)
+} OldJongsong;
+
+######################
+#feature ljmo {
+#    lookup OldChosong ;
+#} ljmo;
+#
+#feature vjmo {
+#    lookup OldJungsong ;
+#} vjmo;
+#
+#feature tjmo {
+#    lookup OldJongsong ;
+#} tjmo;
+
+lookup tonemarkNoHang {
+    sub [ uni302E uni302F ] by [ uni302E.other uni302F.other ] ;
+} tonemarkNoHang;
+
+feature ccmp {
+    lookup OldChosong ;
+    lookup OldJungsong ;
+    lookup OldJongsong ;
+
+	script latn;
+	lookup tonemarkNoHang ;
+	script DFLT;
+	lookup tonemarkNoHang ;
+} ccmp;
+
+feature rlig {
+### 원래 15 2 5, 15 1 이었음.
+	sub        uni1112.y5 uni119E.y0 uni11AB.y2	by uni1112119E11AB ;
+	sub        uni1112.y4 uni119E.y1	        by uni1112119E ;
+} rlig;
+

@@ -1,0 +1,37 @@
+
+NAME = ${HCRTTF}
+SUFF = LVT
+FEA = $(NAME)-win.fea
+FONT = $(NAME)-$(SUFF)
+VHEA = $(FONT)-vhea-win
+
+all: sfd glyphs ttf ttx
+
+sfd:
+	fontforge -script 00savesfd.pe $(NAME).ttf
+	perl 01jamoglyphnames.pl $(NAME).sfd > $(FONT).sfd
+
+glyphs:
+	fontforge -script 03tweakglyphs.py $(FONT).sfd $(FEA)
+
+ttf:
+	fontforge -script 04mergefeature.py $(FONT).sfd $(FEA)
+
+ttx:
+	ttx -o $(VHEA).ttx -t vhea $(FONT).ttf
+	perl fix-vhea.pl $(VHEA).ttx > $(VHEA)-fix.ttx 
+	ttx -o $(FONT)-tmp.ttf -m $(FONT).ttf $(VHEA)-fix.ttx
+	mv -f $(FONT)-tmp.ttf $(FONT).ttf
+
+test:
+	xetex '\def\testfontname{$(FONT)}\input oldhangulcomposed-test.tex'
+	xetex '\def\testfontname{$(FONT)}\input newhangultest.tex'
+
+clean:
+	rm -f $(NAME).sfd *.log *.pdf *.ttx
+
+clean-all:
+	rm -f *.sfd *.log *.pdf *.ttx
+
+dist-font:
+	cd .. && zip hcr-lvt-win.zip GSUB/HAN*-LVT.ttf
