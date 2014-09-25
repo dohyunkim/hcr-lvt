@@ -202,7 +202,7 @@ feature nalt{
 } nalt;
 
 feature fwid {
-# sub space		by uni3164 ;
+sub space		by uni3000 ;
 sub exclam		by uniFF01 ;
 sub quotedbl		by uniFF02 ;
 sub numbersign		by uniFF03 ;
@@ -368,6 +368,8 @@ sub uniFF65		by uni30FB ;
 } fwid;
 
 feature hwid {
+sub space		by space.hwid;
+sub uni3000		by space.hwid;
 sub uni3002		by uniFF61 ;
 sub uni3001		by uniFF64 ;
 sub uni30FB		by uniFF65 ;
@@ -436,7 +438,7 @@ sub uniFF3D		by uni3015 ;
 } hwid;
 
 feature pwid {
-sub uni3164		by space ;
+sub uni3000		by space ;
 sub uniFF01		by exclam ;
 sub uniFF02		by quotedbl ;
 sub uniFF03		by numbersign ;
@@ -542,10 +544,9 @@ sub uniFFE5		by yen ;
 sub uniFFE6		by uni20A9 ;
 } pwid;
 
-feature fwid {
-    pos space   <0  0 185 0> ;
-#    pos [ uniFF0E uniFF0C ] <-333 0 0 0> ;
-} fwid;
+#feature fwid {
+##    pos [ uniFF0E uniFF0C ] <-333 0 0 0> ;
+#} fwid;
 
 #feature hwid {
 #    pos uniFF61 <0 -160 0 0> ; # batang dotum

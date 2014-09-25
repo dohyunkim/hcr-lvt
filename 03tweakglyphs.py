@@ -75,6 +75,7 @@ if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
         hcr[newchrname].vwidth = 0
 
 ### hA hAn
+"""
 if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
     hcr.createChar( -1, "uni1112119E")
     hcr["uni1112119E"].addReference("uniF537")
@@ -84,6 +85,11 @@ if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
     hcr["uni1112119E11AB"].addReference("uniF53A")
     hcr["uni1112119E11AB"].width = 970
     hcr["uni1112119E11AB"].vwidth = 1050
+"""
+if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
+    hcr.createChar( -1, "space.hwid")
+    hcr["space.hwid"].width = 485
+    hcr["space.hwid"].vwidth = 525
 
 ### tone marks
 ### positive width of Tone Marks
@@ -104,6 +110,10 @@ for tm in ["uni302E", "uni302F"]:
     else:
         hcr[newchrname].width = 970
 
+if feafile.find("win") > 0 or feafile.find("mac") > 0: # windows, mac
+    hcr.createChar( -1, "space.hwid")
+    hcr["space.hwid"].width = 485
+    hcr["space.hwid"].vwidth = 525
 
 ### vertical parentheses
 for opening in [0xFE17,0xFE35,0xFE37,0xFE39,0xFE3B,0xFE3D,0xFE3F,0xFE41,0xFE43,0xFE47]:

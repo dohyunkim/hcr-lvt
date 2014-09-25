@@ -1,10 +1,15 @@
 
+include (HCR-yet-puaiii.fea)
 
-lookup OldChosong {
+lookup OldChosongIII {
     include (lvtl.fea)
-    include (lvl.fea)
-} OldChosong;
+} OldChosongIII;
 
+include (HCR-yet-puaii.fea)
+
+lookup OldChosongII {
+    include (lvl.fea)
+} OldChosongII;
 
 lookup OldJungsong {
     include (typeh.fea)
@@ -35,8 +40,14 @@ lookup tonemarkNoHang {
     sub [ uni302E uni302F ] by [ uni302E.other uni302F.other ] ;
 } tonemarkNoHang;
 
+feature rlig {
+	lookup PUAIII ;
+	lookup PUAII ;
+} rlig;
+
 feature ccmp {
-    lookup OldChosong ;
+    lookup OldChosongIII ;
+    lookup OldChosongII ;
     lookup OldJungsong ;
     lookup OldJongsong ;
 
@@ -46,9 +57,9 @@ feature ccmp {
 	lookup tonemarkNoHang ;
 } ccmp;
 
-feature rlig {
-### 원래 15 2 5, 15 1 이었음.
-	sub        uni1112.y5 uni119E.y0 uni11AB.y2	by uni1112119E11AB ;
-	sub        uni1112.y4 uni119E.y1	        by uni1112119E ;
-} rlig;
+#feature rlig {
+#### 원래 15 2 5, 15 1 이었음.
+#	sub        uni1112.y5 uni119E.y0 uni11AB.y2	by uni1112119E11AB ;
+#	sub        uni1112.y4 uni119E.y1	        by uni1112119E ;
+#} rlig;
 

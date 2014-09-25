@@ -8,7 +8,7 @@ Hamchorom (HCR) fonts are Korean fonts bundled in Hangul Word Processor
 http://www.hancom.co.kr/downLoad.downView.do?targetRow=1&seqno=3136&mcd_save=005.
 
 The fonts contain Old Hangul glyphs for conjoning jamo characters.
-As they however do not provide relevant GSUB opentype tables,
+As they however do not provide relevant OpenType GSUB tables,
 applications other than HWP cannot process Old Hangul characters
 properly, giving only quite unpleasant results.
 
@@ -17,6 +17,10 @@ for processing Old Hangul documents. Additionally, vhea and vmtx tables
 will be added to support vertical writing mode. Again, 'LVT' will be
 added to the family name of these fonts, so as to be distinguished from
 original HCR fonts.
+
+
+License
+-------
 
 Hancom Inc.(http://www.hancom.com) is the copyright holder of HCR fonts
 and HCR LVT variants as well, which can be freely downloaded and
@@ -56,5 +60,16 @@ Building
      for F in HANBatang HANBatangB HANDotum HANDotumB; \
      do make -f Makefile-win HCRTTF=$F; \
      done
+
+
+Pre-built binaries
+------------------
+
+* TeX or Linux:	http://ftp.ktug.org/KTUG/hcr-lvt/tex/Hamchorom-LVT.zip
+
+* Mac OS X:	http://ftp.ktug.org/KTUG/hcr-lvt/mac/hcr-lvt-mac.zip
+
+* Windows OS:	http://ftp.ktug.org/KTUG/hcr-lvt/windows/hcr-lvt-win.zip
+
 
 That's all.
