@@ -40,8 +40,8 @@ Building
 	* perl
 	* python
 
-1. download original HCR fonts (see above) into the same directory as
-   these scripts exist.
+1. download and uncompress original HCR fonts (see above) into the same
+   directory as these scripts exist.
 
 2-1. For TeX or Linux OS, run shell command as follows:
 

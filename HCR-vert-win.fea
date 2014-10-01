@@ -40,6 +40,9 @@ feature vert {
     sub emdash by uniFE31 ;
     sub uni2015 by uniFE31 ; ### U+2015
     sub endash by uniFE32 ;
+    sub underscore by uniFE33 ;
+    sub uniFF3F by uniFE33 ;
+    sub uniFE4F by uniFE34 ;
     sub guillemotleft by uniFE3D ;
     sub guillemotright by uniFE3E ;
     ###
@@ -61,8 +64,6 @@ feature vert {
     sub uni3011 by uniFE3C ;
     sub uni3014 by uniFE39 ;
     sub uni3015 by uniFE3A ;
-    sub uni302E by uni302E.vert ;
-    sub uni302F by uni302F.vert ;
 #    sub uniFF01 by uniFE15 ; # !
     sub uniFF08 by uniFE35 ;
     sub uniFF09 by uniFE36 ;
@@ -77,6 +78,13 @@ feature vert {
     sub uniFF3D by uniFE48 ;
     sub uniFF5B by uniFE37 ;
     sub uniFF5D by uniFE38 ;
+    sub uniFF61 by uniFE12 ;
+    sub uniFF62 by uniFE41 ;
+    sub uniFF63 by uniFE42 ;
+    sub uniFF64 by uniFE11 ;
+
+    sub uni302E by uni302E.vert ;
+    sub uni302F by uni302F.vert ;
 } vert;
 
 feature vhal {
