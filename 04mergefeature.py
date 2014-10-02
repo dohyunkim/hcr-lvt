@@ -18,7 +18,7 @@ hcr.mergeFeature(feafile)
 
 
 today = time.strftime('%Y%m%d',time.localtime(time.time()))
-hcr.version = 'Version 1.958; KTS Build '+today
+hcr.version = 'Version 1.959; KTS Build '+today
 hcr.sfntRevision = None
 
 hcr.familyname = hcr.familyname.replace(family,family+' LVT')

@@ -14,9 +14,9 @@ lookup poshalfwidth {
     ] <-485 0 -485 0>;
 } poshalfwidth;
 
-feature hwid {
-	lookup poshalfwidth ;
-} hwid;
+#feature hwid {
+#	lookup poshalfwidth ;
+#} hwid;
 
 feature halt {
 	lookup poshalfwidth ;

@@ -367,9 +367,9 @@ sub uniFF65		by uni30FB ;
 # sub uniFF9F		by uni309A ;
 } fwid;
 
-feature hwid {
-sub space		by space.hwid;
-sub uni3000		by space.hwid;
+#feature hwid {
+#sub space		by space.hwid;
+#sub uni3000		by space.hwid;
 #sub uni3002		by uniFF61 ;
 #sub uni3001		by uniFF64 ;
 #sub uni30FB		by uniFF65 ;
@@ -436,7 +436,7 @@ sub uni3000		by space.hwid;
 # sub uni30F3		by uniFF9D ;
 # sub uni3099		by uniFF9E ;
 # sub uni309A		by uniFF9F ;
-} hwid;
+#} hwid;
 
 feature pwid {
 sub uni3000		by space ;
