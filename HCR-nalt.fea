@@ -370,13 +370,14 @@ sub uniFF65		by uni30FB ;
 feature hwid {
 sub space		by space.hwid;
 sub uni3000		by space.hwid;
-sub uni3002		by uniFF61 ;
-sub uni3001		by uniFF64 ;
-sub uni30FB		by uniFF65 ;
-sub uniFF1C		by uni3008 ;
-sub uniFF1E		by uni3009 ;
-sub uniFF3B		by uni3014 ;
-sub uniFF3D		by uni3015 ;
+#sub uni3002		by uniFF61 ;
+#sub uni3001		by uniFF64 ;
+#sub uni30FB		by uniFF65 ;
+#sub uniFF1C		by uni3008 ;
+#sub uniFF1E		by uni3009 ;
+#sub uniFF3B		by uni3014 ;
+#sub uniFF3D		by uni3015 ;
+#
 # sub uni30F2		by uniFF66 ;
 # sub uni30A1		by uniFF67 ;
 # sub uni30A3		by uniFF68 ;

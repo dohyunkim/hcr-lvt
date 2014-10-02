@@ -1,4 +1,4 @@
-feature halt {
+lookup poshalfwidth {
     pos [ uni3001 uni3002
 	  uniFF0C uniFF0E
 	  uniFF07 uniFF09 uniFF1E uniFF3D uniFF5D uniFF60
@@ -12,7 +12,14 @@ feature halt {
     pos [
 	    uniFF08 uniFF1C uniFF3B uniFF40 uniFF5B uniFF5F
     ] <-485 0 -485 0>;
-#    pos [ uniFF0C uniFF0E ] <-333 0 -485 0> ;
+} poshalfwidth;
+
+feature hwid {
+	lookup poshalfwidth ;
+} hwid;
+
+feature halt {
+	lookup poshalfwidth ;
 } halt;
 
 feature vert {
@@ -40,7 +47,6 @@ feature vert {
     sub emdash by uniFE31 ;
     sub uni2015 by uniFE31 ; ### U+2015
     sub endash by uniFE32 ;
-    sub underscore by uniFE33 ;
     sub uniFF3F by uniFE33 ;
     sub uniFE4F by uniFE34 ;
     sub guillemotleft by uniFE3D ;
@@ -78,10 +84,6 @@ feature vert {
     sub uniFF3D by uniFE48 ;
     sub uniFF5B by uniFE37 ;
     sub uniFF5D by uniFE38 ;
-    sub uniFF61 by uniFE12 ;
-    sub uniFF62 by uniFE41 ;
-    sub uniFF63 by uniFE42 ;
-    sub uniFF64 by uniFE11 ;
 
     sub uni302E by uni302E.vert ;
     sub uni302F by uni302F.vert ;
