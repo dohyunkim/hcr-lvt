@@ -110,10 +110,10 @@ for tm in ["uni302E", "uni302F"]:
     else:
         hcr[newchrname].width = 970
 
-if feafile.find("win") > 0 or feafile.find("mac") > 0: # windows, mac
-    hcr.createChar( -1, "space.hwid")
-    hcr["space.hwid"].width = 485
-    hcr["space.hwid"].vwidth = 525
+#if feafile.find("win") > 0 or feafile.find("mac") > 0: # windows, mac
+#    hcr.createChar( -1, "space.hwid")
+#    hcr["space.hwid"].width = 485
+#    hcr["space.hwid"].vwidth = 525
 
 ### vertical parentheses
 for opening in [0xFE17,0xFE35,0xFE37,0xFE39,0xFE3B,0xFE3D,0xFE3F,0xFE41,0xFE43,0xFE47]:

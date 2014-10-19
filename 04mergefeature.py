@@ -18,14 +18,21 @@ hcr.mergeFeature(feafile)
 
 
 today = time.strftime('%Y%m%d',time.localtime(time.time()))
-hcr.version = 'Version 1.959; KTS Build '+today
+
+target = 'tex'
+if feafile.find('win') > 0:
+    target = 'win'
+elif feafile.find('mac') > 0:
+    target = 'mac'
+
+hcr.version = 'Version 1.981; KTS '+target+' Build '+today
 hcr.sfntRevision = None
 
 hcr.familyname = hcr.familyname.replace(family,family+' LVT')
 hcr.fullname   = hcr.fullname.replace(family,family+' LVT')
 hcr.fontname   = hcr.fontname.replace(family,family+'LVT')
 
-hcr.appendSFNTName(0x409,3,'YoonDesign: '+hcr.fullname+': KTS '+today)
+hcr.appendSFNTName(0x409,3,'YoonDesign: '+hcr.fullname+': KTS '+target+' '+today)
 hcr.appendSFNTName(0x409,5, hcr.version)
 hcr.appendSFNTName(0x409,8,'YoonDesign; The Korean TeX Society')
 hcr.appendSFNTName(0x409,10,'The Korean TeX Society has added GSUB/GPOS/vhea/vmtx tables chiefly for old hangul rendering. Please contact http://www.ktug.org for these issues.')
