@@ -85,11 +85,11 @@ if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
     hcr["uni1112119E11AB"].addReference("uniF53A")
     hcr["uni1112119E11AB"].width = 970
     hcr["uni1112119E11AB"].vwidth = 1050
-"""
 if feafile.find("win") < 0 and feafile.find("mac") < 0: # no windows, no mac
     hcr.createChar( -1, "space.hwid")
     hcr["space.hwid"].width = 485
     hcr["space.hwid"].vwidth = 525
+"""
 
 ### tone marks
 ### positive width of Tone Marks
