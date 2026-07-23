@@ -25,7 +25,7 @@ if feafile.find('win') > 0:
 elif feafile.find('mac') > 0:
     target = 'mac'
 
-hcr.version = 'Version 2.120; KTS '+target+' Build '+today
+hcr.version = 'Version 2.121; KTS '+target+' Build '+today
 hcr.sfntRevision = None
 
 hcr.familyname = hcr.familyname.replace(family,family+' LVT')

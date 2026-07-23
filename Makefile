@@ -5,6 +5,7 @@ FEA = $(NAME).fea
 FONT = $(NAME)-$(SUFF)
 VHEA = $(FONT)-vhea
 VMTX = $(FONT)-vmtx
+CMAP = $(FONT)-cmap
 DATE = $(shell date "+%Y%m%d%H%M")
 
 all: sfd glyphs ttf ttx
@@ -27,6 +28,10 @@ ttx:
 	ttx -o $(VHEA).ttx -t vhea $(FONT).ttf
 	perl fix-vhea.pl $(VHEA).ttx > $(VHEA)-fix.ttx 
 	ttx -o $(FONT)-tmp.ttf -m $(FONT).ttf $(VHEA)-fix.ttx
+	mv -f $(FONT)-tmp.ttf $(FONT).ttf
+	ttx -o $(CMAP).ttx -t cmap $(FONT).ttf
+	perl addcmap14.pl $(CMAP).ttx > $(CMAP)-fix.ttx
+	ttx -o $(FONT)-tmp.ttf -m $(FONT).ttf $(CMAP)-fix.ttx
 	mv -f $(FONT)-tmp.ttf $(FONT).ttf
 
 test:
