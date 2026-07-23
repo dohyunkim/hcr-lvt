@@ -1,0 +1,17 @@
+% vertical writing test, to be checked by eye:
+% - column 1: tone marks must sit left of their own syllable:
+%   no dot on NA, one dot on RAS, two dots on MAL, one dot on MI
+% - column 2: old hangul syllables compose, one per cell, dot on KEUL
+% - column 3: punctuation must use vertical forms inside the column
+\ifx\testfontname\undefined
+    \def\testfontname{HCRBatang-LVT}\fi
+\font\v="[\testfontname]:script=hang;vertical" at 36pt
+\parindent0pt
+\def\vertcol#1{\rlap{\special{x:gsave}\special{x:rotate -90}\v #1\special{x:grestore}}\kern 80pt}
+\leavevmode
+\kern 40pt
+\vertcol{나랏^^^^302e말^^^^302f^^^^110a^^^^119e미^^^^302e}%
+\vertcol{^^^^1112^^^^119e^^^^11ab^^^^1109^^^^119e^^^^11b0글^^^^302e}%
+\vertcol{안녕, 세상. 그래? 좋아! (한글)}
+\vskip 600pt
+\bye

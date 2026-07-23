@@ -37,9 +37,10 @@ ttx:
 test:
 	xetex '\def\testfontname{$(FONT)}\input oldhangulcomposed-test.tex'
 	xetex '\def\testfontname{$(FONT)}\input newhangultest.tex'
+	xetex '\def\testfontname{$(FONT)}\input verticaltest.tex'
 
 clean:
-	rm -f $(NAME).sfd *.log *.pdf *.ttx 
+	rm -f $(NAME).sfd *.log *.pdf *.ttx
 
 clean-all:
 	rm -f *.sfd *.log *.pdf *.ttx
