@@ -27,6 +27,26 @@ hcr.removeGlyph(-1, "Oldhangul_3254")
 hcr.removeGlyph(-1, "Oldhangul_3253")
 hcr.removeGlyph(-1, "Oldhangul_705glyph702")
 
+### also drop orphaned helper lookups: any substitution still pointing
+### at a pre-rename or removed glyph name is dead and would only emit
+### "unused glyph" warnings at generate time
+def missing(name):
+    try:
+        hcr[name]
+        return False
+    except Exception:
+        return True
+
+deadsubs = set()
+for gl in hcr.glyphs():
+    for entry in gl.getPosSub("*"):
+        if entry[1] in ("Substitution","AltSubs","MultSubs","Ligature") \
+           and any(missing(t) for t in entry[2:]):
+            deadsubs.add(entry[0])
+for sub in deadsubs:
+    lookup = hcr.getLookupOfSubtable(sub)
+    if lookup in hcr.gsub_lookups:
+        hcr.removeLookup(lookup)
 
 ### turn on vertical metrics
 hcr.hasvmetrics = 1
